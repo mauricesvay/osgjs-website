@@ -1,0 +1,1 @@
+wintersmith build --chdir src -o ../ --force
