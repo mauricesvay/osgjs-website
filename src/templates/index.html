@@ -99,7 +99,7 @@
         <h2>{{contents['examples.md'].title}}</h2>
         <div class="row">
             {% for item in contents['examples.md'].metadata.examples %}
-                <a href="http://sketchfab.com/" class="col-md-3 example">
+                <a href="{{item.link}}" class="col-md-3 example">
                     <img src="{{item.image}}" alt="{{item.title}}">
                     {{item.title}}
                 </a>
