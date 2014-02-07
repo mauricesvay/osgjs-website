@@ -88,6 +88,22 @@ h3 {
     background: #3a4243;
     color: #FFF;
 }
+    .examples {
+        list-style: none;
+        padding: 0;
+    }
+        .examples li {
+            padding: 0;
+            margin: 0;
+        }
+        .examples .btn {
+            display: block;
+            background: #052326;
+            margin: 1em;
+        }
+        .examples .btn:hover {
+            background: #020c0d;
+        }
     #examples h2,
     #examples a {
         color: #FFF;

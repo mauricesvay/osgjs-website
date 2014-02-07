@@ -93,12 +93,20 @@
 <!-- Examples -->
 <section id="examples">
     <div class="container">
-        <h2>Examples</h2>
-        <p>Included sample</p>
-
         <h2>{{contents['examples.md'].title}}</h2>
-        <div class="row">
-            {% for item in contents['examples.md'].metadata.examples %}
+        <ul class="row examples">
+            {% for item in contents['examples.md'].metadata.samples %}
+            <li class="col-md-2">
+                <a href="{{contents['examples.md'].metadata.base}}{{item}}" class="btn">
+                    {{item}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2>{{contents['projects.md'].title}}</h2>
+        <div class="row projects">
+            {% for item in contents['projects.md'].metadata.examples %}
                 <a href="{{item.link}}" class="col-md-3 example">
                     <img src="{{item.image}}" alt="{{item.title}}">
                     {{item.title}}
