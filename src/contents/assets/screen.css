@@ -32,12 +32,12 @@ h3 {
     color: #052326;
 }
 .btn-primary {
-    background: #ff5c7f;
+    background: #FF7400;
     border: 0;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-    background: #e55372;
+    background: #d76200;
 }
 
 .navbar-inverse {
